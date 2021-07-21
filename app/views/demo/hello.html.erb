@@ -1,0 +1,30 @@
+<a href="/demo/linked">html linked</a>     <br>
+<%= link_to("rail linked",{:action => 'linked'}) %><br>
+
+ID: <%= @id %> <br>
+ID: <%= params[:id] %> <br>
+Page: <%= params[:page] %> <br>
+Page: <%= @page %> <br>
+Next page: <%= @page.to_i + 1 %> <br>
+ 
+<h2>Hello User</h2>
+
+<% 1+1 %>
+<%= 1+1 %>
+<br>
+
+<% target='world'%>
+<%= "Hello #{target}!"%>
+
+<br>
+
+<% 3.times do |n| %>
+    <p> <%= n %> </p>
+<% end %>
+
+<br>
+
+<% @array.each do |n| %>
+    <p> <%= n %> </p>
+<% end %>
+
